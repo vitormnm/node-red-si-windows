@@ -28,6 +28,9 @@ Tested on windows 7 pro x64, windows 10 x64 and windows 11 x64
 clone app, open the project directory
 
 ```bash
+  npm install
+```
+```bash
   npm run build
 ```
 
