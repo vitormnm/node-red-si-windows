@@ -6,7 +6,7 @@ node-red executable for windows with the main industrial automation modules.
 no need to install node-red and nodejs.
 Using only Electron.js
 
-Tested on windows 7 pro x64, windows 10 x64 and windows 11 x64
+Tested on windows 7 pro x64 ,  windows 7 x86, windows 10 x64 and windows 11 x64
 
 ![node-red-si](/resources/node-red-si-demonstration.gif) 
 
@@ -33,11 +33,11 @@ clone app, open the project directory
 ```bash
   npm install
 ```
-Buid 32 bits
+Build 32 bits
 ```bash
   npm run build32
 ```
-Buid 64 bits
+Build 64 bits
 ```bash
   npm run build64
 ```
