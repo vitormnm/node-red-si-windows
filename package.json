@@ -1,11 +1,12 @@
 {
   "name": "node-red-si-windows",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "build": "electron-packager . node-red-si --icon=./resources/nodered.ico --platform=win32 --arch=x64  --out=build --asar --overwrite --win32metadata.CompanyName='vitormnm' --win32metadata.ProductName='node-red-si'"
+    "build64": "electron-packager . node-red-si --icon=./resources/nodered.ico --platform=win32 --arch=x64  --out=build --asar --overwrite --win32metadata.CompanyName='vitormnm' --win32metadata.ProductName='node-red-si'",
+    "build32": "electron-packager . node-red-si --icon=./resources/nodered.ico --platform=win32 --arch=ia32  --out=build --asar --overwrite --win32metadata.CompanyName='vitormnm' --win32metadata.ProductName='node-red-si'"
   },
   "author": "vitormnm",
   "license": "MIT",
@@ -18,12 +19,15 @@
     "node-red-contrib-opcua": "0.2.292",
     "node-red-contrib-pccc": "1.0.2",
     "node-red-contrib-s7": "3.1.0",
+    "node-red-contrib-ui-led": "0.4.11",
     "node-red-dashboard": "3.2.0",
     "node-red-node-mysql": "1.0.3",
+    "node-red-node-ping": "0.3.3",
     "node-red-node-sqlite": "1.0.3",
     "node-red-node-ui-table": "0.4.3"
   },
   "devDependencies": {
-    "electron": "21.2.3"
+    "electron": "21.2.3",
+    "electron-packager": "17.1.1"
   }
 }

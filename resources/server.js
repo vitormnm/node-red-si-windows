@@ -24,7 +24,10 @@ module.exports = () => {
     editorTheme: {
       page: {
         title: "Node-RED-SI"
-      }
+      },
+      projects: {
+        enabled: true
+    },
     },
     userDir: "./node-red",
     functionGlobalContext: {}    // enables global context
