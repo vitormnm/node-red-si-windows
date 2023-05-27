@@ -12,21 +12,21 @@ Tested on windows 7 pro x64 ,  windows 7 x86, windows 10 x64 and windows 11 x64
 
 
 ##  Installed modules:
-  node-red
-  node-red-contrib-cip-ethernet-ip
-  node-red-contrib-modbus
-  node-red-contrib-mssql-plus
-  node-red-contrib-nvl
-  node-red-contrib-opcua
-  node-red-contrib-pccc
-  node-red-contrib-s7
-  node-red-contrib-ui-led
-  node-red-dashboard
-  node-red-node-mysql
-  node-red-node-ping
-  node-red-node-sqlite
-  node-red-node-ui-table
-  node-red-contrib-aedes
+- node-red
+- node-red-contrib-cip-ethernet-ip
+- node-red-contrib-modbus
+- node-red-contrib-mssql-plus
+- node-red-contrib-nvl
+- node-red-contrib-opcua
+- node-red-contrib-pccc
+- node-red-contrib-s7
+- node-red-contrib-ui-led
+- node-red-dashboard
+- node-red-node-mysql
+- node-red-node-ping
+- node-red-node-sqlite
+- node-red-node-ui-table
+- node-red-contrib-aedes
 ## Build
 
 clone app, open the project directory
