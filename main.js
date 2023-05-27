@@ -1,20 +1,47 @@
-"use strict";
 
 // [run the app]
 // $ npm install electron
 // $ ./node_modules/.bin/electron .
 
 const {app, nativeImage, Tray, Menu, BrowserWindow , shell } = require("electron");
+const net = require('net');
 
-//Server Node-red
-const server = require("./resources/server");
+const port = 1881;
+
+const server = net.createServer();
+server.once('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    PortBusy();
+  } else {
+    console.log(err);
+  }
+});
+
+server.once('listening', () => {
+  server.close();
+  PortAvailable();
+});
+
+server.listen(port);
+
+function PortBusy() {
+   // close the application if the port is in use
+  console.log("close the application if the port is in use");
+  process.exit();
+}
+
+function PortAvailable() {
+  // Execute a function if the port is available
+  console.log("Execute a function if the port is available");
+  //server_red Node-red
+const server_red = require("./resources/server");
 
 let top = {}; // prevent gc to keep windows
 
 app.once("ready", ev => {
 
     //Start Node-red
-    server();
+    server_red();
 
     // empty image as transparent icon: it can click
     // see: https://electron.atom.io/docs/api/tray/
@@ -33,7 +60,7 @@ app.once("ready", ev => {
         {type: "separator"},
         {role: "quit"}, // "role": system prepared action menu
     ]);
-    top.tray.setToolTip("Server Start localhost:1881/red/admin");
+    top.tray.setToolTip("server_red Start localhost:1881/red/admin");
     //top.tray.setTitle("Tray Example"); // macOS only
     top.tray.setContextMenu(menu);
 
@@ -53,3 +80,4 @@ app.on("before-quit", ev => {
     // release windows
     top = null;
 });
+}

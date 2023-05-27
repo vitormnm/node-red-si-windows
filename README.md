@@ -20,7 +20,7 @@ Tested on windows 7 pro x64 ,  windows 7 x86, windows 10 x64 and windows 11 x64
     "node-red-contrib-opcua": "0.2.292",
     "node-red-contrib-pccc": "1.0.2",
     "node-red-contrib-s7": "3.1.0",
-    "node-red-contrib-ui-led": "0.4.11",
+    "node-red-contrib-ui-led": "^0.4.11",
     "node-red-dashboard": "3.2.0",
     "node-red-node-mysql": "1.0.3",
     "node-red-node-ping": "0.3.3",
