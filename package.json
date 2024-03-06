@@ -1,7 +1,7 @@
 {
   "name": "node-red-si-windows",
-  "version": "0.1.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Node-red portable windows",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
@@ -11,21 +11,21 @@
   "author": "vitormnm",
   "license": "MIT",
   "dependencies": {
-    "node-red": "^3.0.2",
+    "@flowfuse/node-red-dashboard": "^1.3.0",
+    "node-red": "^3.1.6",
     "node-red-contrib-aedes": "^0.11.1",
     "node-red-contrib-cip-ethernet-ip": "^1.1.3",
-    "node-red-contrib-modbus": "^5.23.3",
-    "node-red-contrib-mssql-plus": "^0.7.3",
+    "node-red-contrib-influxdb": "^0.7.0",
+    "node-red-contrib-modbus": "^5.30.0",
+    "node-red-contrib-mssql-plus": "^0.12.2",
     "node-red-contrib-nvl": "^1.1.1",
     "node-red-contrib-opcua": "^0.2.292",
     "node-red-contrib-pccc": "^1.0.2",
     "node-red-contrib-s7": "^3.1.0",
-    "node-red-contrib-ui-led": "^0.4.11",
-    "node-red-dashboard": "^3.2.0",
-    "node-red-node-mysql": "^1.0.3",
+    "node-red-node-mongodb": "^0.2.5",
+    "node-red-node-mysql": "^2.0.0",
     "node-red-node-ping": "^0.3.3",
-    "node-red-node-sqlite": "^1.0.3",
-    "node-red-node-ui-table": "^0.4.3"
+    "node-red-node-sqlite": "^1.0.3"
   },
   "devDependencies": {
     "electron": "21.2.3",
