@@ -20,12 +20,12 @@ Tested on windows 7 pro x64 ,  windows 7 x86, windows 10 x64 and windows 11 x64
 - node-red-contrib-opcua
 - node-red-contrib-pccc
 - node-red-contrib-s7
-- node-red-contrib-ui-led
-- node-red-dashboard
+- @flowfuse/node-red-dashboard
+- node-red-contrib-influxdb
+- node-red-node-mongodb
 - node-red-node-mysql
 - node-red-node-ping
 - node-red-node-sqlite
-- node-red-node-ui-table
 - node-red-contrib-aedes
 ## Build
 
