@@ -6,7 +6,7 @@
 const { app, nativeImage, Tray, Menu, BrowserWindow, shell } = require("electron");
 const net = require('net');
 
-const port = 1881;
+const port = 1880;
 
 const server = net.createServer();
 server.once('error', (err) => {
