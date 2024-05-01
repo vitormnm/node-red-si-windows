@@ -46,7 +46,7 @@ Build 64 bits
 
 ## author
 
-- [@vitormnm](https://www.linkedin.com/in/vitor-neves-940638152/)
+- [@vitormnm](https://www.linkedin.com/in/vitor-mião-940638152/)
 
 
 
